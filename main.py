@@ -66,7 +66,7 @@ for platform in platforms:
 create_segment(B1, B2, 20, space, 'darkslategray')
 
 # balls
-balls = [([randrange(256) for i in range(3)], create_ball(space)) for j in range(800)]
+balls = [([randrange(256) for i in range(3)], create_ball(space)) for j in range(600)]
 
 while True:
     surface.fill(pg.Color('black'))
