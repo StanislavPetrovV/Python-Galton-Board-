@@ -78,7 +78,9 @@ while True:
     space.step(1 / FPS)
     space.debug_draw(draw_options)
 
-    [pg.draw.circle(surface, color, ball.position, ball_radius) for color, ball in balls]
+    # [pg.draw.circle(surface, color, ball.position, ball_radius) for color, ball in balls]
+    [pg.draw.circle(surface, color, (int(ball.position[0]), int(ball.position[1])),
+                    ball_radius) for color, ball in balls]
 
     pg.display.flip()
     clock.tick(FPS)
